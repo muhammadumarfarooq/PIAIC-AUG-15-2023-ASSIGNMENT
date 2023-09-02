@@ -53,4 +53,13 @@ for(let i = 0; i < listOfGrades.length; i++){
     }
 }
 
-console.log("List of grades", listOfGrades);
+// console.log("List of grades", listOfGrades);
+
+// 6. Find largest element in an array
+
+const getLargestElementInArray = (numArray: number[]) => {
+    const sortedArray = numArray.sort(function(a, b){return b-a});
+    return sortedArray[0];
+}
+
+console.log(getLargestElementInArray([2,30,4,8,]));
