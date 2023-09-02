@@ -14,11 +14,23 @@
 
 // 2. Print only the even numbers
 
-const numArray = [1,2,3,4,5,6];
+// const numArray = [1,2,3,4,5,6];
+//
+//
+// for(let i = 0; i < numArray.length; i++){
+//     if(numArray[i] % 2 == 0){
+//         console.log(numArray[i]);
+//     }
+// }
 
+// 3. Remove even numbers
+
+const numArray = [1,2,3,4,5,6];
 
 for(let i = 0; i < numArray.length; i++){
     if(numArray[i] % 2 == 0){
-        console.log(numArray[i]);
+        numArray.splice(i,1);
     }
 }
+
+console.log("Odd numbers", numArray);
