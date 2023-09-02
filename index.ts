@@ -37,9 +37,20 @@ for(let i = 0; i < numArray.length; i++){
 
 // 4. Calculate area of a circle
 
-function calcCircleArea(radius: number) {
-    return Math.PI * (radius ** 2)
+// function calcCircleArea(radius: number) {
+//     return Math.PI * (radius ** 2)
+// }
+//
+// console.log('Calculate Area of a circle', calcCircleArea(5));
+
+// 5. Remove failing grades
+
+const listOfGrades = [45, 56, 70, 3, 80];
+
+for(let i = 0; i < listOfGrades.length; i++){
+    if(listOfGrades[i] < 50) {
+        listOfGrades.splice(i, 1);
+    }
 }
 
-console.log('Calculate Area of a circle', calcCircleArea(5));
-
+console.log("List of grades", listOfGrades);
