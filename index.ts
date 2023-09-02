@@ -33,4 +33,13 @@ for(let i = 0; i < numArray.length; i++){
     }
 }
 
-console.log("Odd numbers", numArray);
+// console.log("Odd numbers", numArray);
+
+// 4. Calculate area of a circle
+
+function calcCircleArea(radius: number) {
+    return Math.PI * (radius ** 2)
+}
+
+console.log('Calculate Area of a circle', calcCircleArea(5));
+
